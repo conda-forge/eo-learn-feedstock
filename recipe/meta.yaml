@@ -1,5 +1,5 @@
 {% set name = "eo-learn" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: be9a1b219076b2ce9e5d024d7f2a76e64b1ebd1d14f3947e0a8a391e6f02df72
+  sha256: 25e881a4a29d72ab44fec782da0d0e9e5311c82dcf67909e95f4cd822f49c741
 
 build:
   noarch: python
@@ -17,21 +17,18 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.5
+    - python >=3.7
   run:
-    - eo-learn-core
-    - eo-learn-coregistration
-    - eo-learn-features
-    - eo-learn-geometry
-    - eo-learn-io
-    - eo-learn-mask
-    - eo-learn-ml-tools
-    - eo-learn-visualization
-    - python >=3.5
-    - gdal
-    - rasterio
-    - shapely
-    - fiona
+    - eo-learn-core >=1.0.0
+    - eo-learn-coregistration >=1.0.0
+    - eo-learn-features >=1.0.0
+    - eo-learn-geometry >=1.0.0
+    - eo-learn-io >=1.0.0
+    - eo-learn-mask >=1.0.0
+    - eo-learn-ml-tools >=1.0.0
+    - eo-learn-visualization >=1.0.0
+    - python >=3.7
+
 test:
   imports:
     - eolearn
@@ -43,8 +40,6 @@ test:
     - eolearn.mask
     - eolearn.ml_tools
     - eolearn.visualization
-  requires:
-    - opencv
 
 about:
   home: https://github.com/sentinel-hub/eo-learn
