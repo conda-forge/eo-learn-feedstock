@@ -57,6 +57,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - mlubej
     - batic
     - zigaluksic
     - mxr-conda
