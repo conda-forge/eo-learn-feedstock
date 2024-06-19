@@ -1,5 +1,5 @@
 {% set name = "eo-learn" %}
-{% set version = "1.5.4" %}
+{% set version = "1.5.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 5ae8b643af96c1a5e71ddeed3d36fbdb8e810ef147786cec9c56ccc66ab9b776
+  sha256: 4f825134ba46119aecc0c06bf5ed242a93281f8c851d06d0f7ba590a0b73da8c
 
 build:
   noarch: python
