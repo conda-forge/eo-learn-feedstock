@@ -150,5 +150,6 @@ Feedstock Maintainers
 * [@batic](https://github.com/batic/)
 * [@mlubej](https://github.com/mlubej/)
 * [@mxr-conda](https://github.com/mxr-conda/)
+* [@tsuligoj](https://github.com/tsuligoj/)
 * [@zigaluksic](https://github.com/zigaluksic/)
 
